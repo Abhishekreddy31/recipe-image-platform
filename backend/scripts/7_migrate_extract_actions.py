@@ -25,16 +25,27 @@ def migrate_extract_actions():
     print("Migration: Re-extracting Cooking Actions")
     print("=" * 60)
 
-    # Initialize NLP components
-    print("\nInitializing NLP components...")
-    taxonomy_actions = load_taxonomy_for_matcher(settings.TAXONOMY_PATH)
-    matcher = ActionMatcher(taxonomy_actions)
-    extractor = ActionExtractor(matcher, settings.SPACY_MODEL)
-
     recipes_updated = 0
     steps_updated = 0
 
     with get_db_context() as db:
+        # Initialize NLP components using database actions (same as API)
+        print("\nInitializing NLP components from database...")
+        actions_db = db.query(CookingAction).all()
+        taxonomy_actions = [
+            {
+                "id": action.id,
+                "canonical_name": action.canonical_name,
+                "synonyms": action.synonyms or [],
+                "category": action.category,
+                "priority": action.priority or 1
+            }
+            for action in actions_db
+        ]
+        print(f"Loaded {len(taxonomy_actions)} actions from database")
+
+        matcher = ActionMatcher(taxonomy_actions)
+        extractor = ActionExtractor(matcher, settings.SPACY_MODEL)
         # Get all recipes
         recipes = db.query(Recipe).all()
         print(f"\nFound {len(recipes)} recipes in database")
