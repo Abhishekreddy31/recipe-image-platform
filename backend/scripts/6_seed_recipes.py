@@ -4,7 +4,8 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from app.database import get_db_context
-from app.models import Recipe, RecipeStep
+from app.models import Recipe, RecipeStep, CookingAction
+from app.services.nlp_service import NLPService
 
 # Example comprehensive recipes
 EXAMPLE_RECIPES = [
@@ -106,6 +107,7 @@ def seed_recipes():
     print("=" * 60)
 
     recipes_added = 0
+    nlp_service = NLPService()
 
     with get_db_context() as db:
         for recipe_data in EXAMPLE_RECIPES:
@@ -126,7 +128,8 @@ def seed_recipes():
             db.add(recipe)
             db.flush()  # Get the recipe ID
 
-            # Add steps
+            # Add steps with NLP extraction
+            print(f"\n📝 Processing '{recipe_data['title']}':")
             for idx, step_text in enumerate(recipe_data["steps"], 1):
                 step = RecipeStep(
                     recipe_id=recipe.id,
@@ -134,9 +137,30 @@ def seed_recipes():
                     instruction_text=step_text
                 )
                 db.add(step)
+                db.flush()  # Get the step ID
+
+                # Extract cooking actions using NLP
+                try:
+                    extracted = nlp_service.extract_cooking_actions(step_text)
+                    action_names = [action["action"] for action in extracted]
+
+                    if action_names:
+                        # Find cooking actions in database
+                        actions = db.query(CookingAction).filter(
+                            CookingAction.canonical_name.in_(action_names)
+                        ).all()
+
+                        # Link actions to step
+                        step.extracted_actions = actions
+                        print(f"  Step {idx}: {', '.join(action_names)}")
+                    else:
+                        print(f"  Step {idx}: (no techniques detected)")
+
+                except Exception as e:
+                    print(f"  Step {idx}: Error extracting actions - {e}")
 
             recipes_added += 1
-            print(f"\n✅ Added '{recipe_data['title']}' with {len(recipe_data['steps'])} steps")
+            print(f"✅ Added '{recipe_data['title']}' with {len(recipe_data['steps'])} steps")
 
         db.commit()
 
