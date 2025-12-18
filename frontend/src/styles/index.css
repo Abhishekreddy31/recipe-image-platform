@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .recipe-step-card {
+    @apply bg-white rounded-lg shadow-md p-6 mb-4;
+  }
+
+  .technique-image {
+    @apply rounded-md overflow-hidden;
+  }
+
+  .technique-image img {
+    @apply w-full h-full object-cover;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors;
+  }
+}
