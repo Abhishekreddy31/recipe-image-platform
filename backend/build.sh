@@ -21,10 +21,5 @@ python scripts/5_seed_database.py
 echo "==> Linking images to cooking actions..."
 python scripts/8_migrate_action_images.py
 
-echo "==> Seeding example recipes..."
-python scripts/6_seed_recipes.py
-
-echo "==> Migrating existing recipes (re-extract actions)..."
-python scripts/7_migrate_extract_actions.py
-
 echo "==> Build completed successfully!"
+echo "Note: Create recipes via API after deployment"
