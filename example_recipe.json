@@ -1,0 +1,73 @@
+{
+  "title": "Classic French Onion Soup",
+  "description": "A rich, hearty soup with caramelized onions, beef broth, and melted Gruyère cheese on toasted bread. This recipe demonstrates multiple cooking techniques including knife skills, sautéing, simmering, and finishing.",
+  "recipe_metadata": {
+    "servings": 4,
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 50,
+    "difficulty": "medium",
+    "cuisine": "French"
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction_text": "Peel the onions and slice them thinly into half-moon shapes, about 1/4 inch thick. You should have approximately 6 cups of sliced onions."
+    },
+    {
+      "step_number": 2,
+      "instruction_text": "Mince the garlic cloves finely and set aside. Chop the fresh thyme leaves."
+    },
+    {
+      "step_number": 3,
+      "instruction_text": "In a large heavy-bottomed pot, melt the butter over medium heat. Add the sliced onions and toss to coat them evenly with the butter."
+    },
+    {
+      "step_number": 4,
+      "instruction_text": "Sauté the onions for 10-15 minutes, stirring occasionally, until they begin to soften and turn translucent."
+    },
+    {
+      "step_number": 5,
+      "instruction_text": "Reduce the heat to medium-low and continue to caramelize the onions for 30-40 minutes, stirring every 5 minutes. The onions should turn a deep golden brown color and become very sweet."
+    },
+    {
+      "step_number": 6,
+      "instruction_text": "Add the minced garlic and chopped thyme to the caramelized onions. Stir and cook for 1-2 minutes until fragrant."
+    },
+    {
+      "step_number": 7,
+      "instruction_text": "Deglaze the pot by adding the white wine, scraping up any browned bits from the bottom with a wooden spoon."
+    },
+    {
+      "step_number": 8,
+      "instruction_text": "Pour in the beef broth and add the bay leaves. Bring the mixture to a boil over high heat."
+    },
+    {
+      "step_number": 9,
+      "instruction_text": "Once boiling, reduce the heat to low and simmer the soup for 20-25 minutes to allow the flavors to meld together."
+    },
+    {
+      "step_number": 10,
+      "instruction_text": "While the soup simmers, slice the baguette into 1-inch thick rounds. Toast the bread slices under the broiler until golden brown on both sides."
+    },
+    {
+      "step_number": 11,
+      "instruction_text": "Grate the Gruyère cheese and set aside."
+    },
+    {
+      "step_number": 12,
+      "instruction_text": "Preheat your oven's broiler to high. Ladle the hot soup into oven-safe bowls, filling them about 3/4 full."
+    },
+    {
+      "step_number": 13,
+      "instruction_text": "Place a toasted bread slice on top of each bowl of soup. Generously top the bread with the grated Gruyère cheese."
+    },
+    {
+      "step_number": 14,
+      "instruction_text": "Broil the soup bowls for 3-4 minutes until the cheese is melted, bubbly, and golden brown on top."
+    },
+    {
+      "step_number": 15,
+      "instruction_text": "Remove from the oven and let rest for 2 minutes before serving. Garnish with fresh thyme leaves if desired."
+    }
+  ]
+}

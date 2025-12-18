@@ -27,12 +27,18 @@ class Settings(BaseSettings):
     # Images
     STATIC_DIR: str = "backend/static"
     IMAGES_DIR: str = "backend/static/images/techniques"
+    PEXELS_API_KEY: Optional[str] = None  # For image download script
 
-    # CORS
-    CORS_ORIGINS: list[str] = ["http://localhost:3000", "http://localhost:5173"]
+    # CORS (add production domains when deployed)
+    CORS_ORIGINS: str = "http://localhost:3000,http://localhost:5173,https://*.vercel.app,https://*.onrender.com"
+
+    @property
+    def cors_origins_list(self) -> list[str]:
+        """Parse CORS origins from comma-separated string"""
+        return [origin.strip() for origin in self.CORS_ORIGINS.split(",")]
 
     # Paths
-    TAXONOMY_PATH: str = "backend/data/taxonomy/cooking_actions_taxonomy.json"
+    TAXONOMY_PATH: str = "data/taxonomy/cooking_actions_taxonomy.json"
 
     class Config:
         env_file = ".env"

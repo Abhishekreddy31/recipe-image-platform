@@ -1,0 +1,116 @@
+{
+  "bake": {
+    "image_url": "/static/images/techniques/bake-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "dry-heat-cooking"
+  },
+  "boil": {
+    "image_url": "/static/images/techniques/boil-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "moist-heat-cooking"
+  },
+  "chop": {
+    "image_url": "/static/images/techniques/chop-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "cutting-prep"
+  },
+  "dice": {
+    "image_url": "/static/images/techniques/dice-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "cutting-prep"
+  },
+  "fold": {
+    "image_url": "/static/images/techniques/fold-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "mixing-combining"
+  },
+  "grate": {
+    "image_url": "/static/images/techniques/grate-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "cutting-prep"
+  },
+  "grill": {
+    "image_url": "/static/images/techniques/grill-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "dry-heat-cooking"
+  },
+  "mince": {
+    "image_url": "/static/images/techniques/mince-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "cutting-prep"
+  },
+  "peel": {
+    "image_url": "/static/images/techniques/peel-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "cutting-prep"
+  },
+  "roast": {
+    "image_url": "/static/images/techniques/roast-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "dry-heat-cooking"
+  },
+  "saut\u00e9": {
+    "image_url": "/static/images/techniques/saut\u00e9-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "dry-heat-cooking"
+  },
+  "sear": {
+    "image_url": "/static/images/techniques/sear-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "dry-heat-cooking"
+  },
+  "simmer": {
+    "image_url": "/static/images/techniques/simmer-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "moist-heat-cooking"
+  },
+  "slice": {
+    "image_url": "/static/images/techniques/slice-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "cutting-prep"
+  },
+  "steam": {
+    "image_url": "/static/images/techniques/steam-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "moist-heat-cooking"
+  },
+  "stir": {
+    "image_url": "/static/images/techniques/stir-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "mixing-combining"
+  },
+  "toast": {
+    "image_url": "/static/images/techniques/toast-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "dry-heat-cooking"
+  },
+  "toss": {
+    "image_url": "/static/images/techniques/toss-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "mixing-combining"
+  },
+  "whisk": {
+    "image_url": "/static/images/techniques/whisk-demo.jpg",
+    "attribution": "Demo placeholder image. In production, this would be a real image from Wikimedia Commons.",
+    "license": "Demo",
+    "category": "mixing-combining"
+  }
+}

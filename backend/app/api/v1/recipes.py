@@ -2,7 +2,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
-from uuid import UUID
 
 from ...database import get_db
 from ...models import Recipe, RecipeStep, CookingAction
@@ -17,12 +16,41 @@ router = APIRouter()
 # Initialize NLP components (lazy loading)
 _extractor = None
 
-def get_extractor():
+def get_extractor(db: Session = None):
     """Lazy load NLP extractor"""
     global _extractor
     if _extractor is None:
-        # Load taxonomy
-        taxonomy_actions = load_taxonomy_for_matcher(settings.TAXONOMY_PATH)
+        # Load actions from database to get real UUIDs
+        if db is None:
+            from ...database import SessionLocal
+            db = SessionLocal()
+            try:
+                actions_db = db.query(CookingAction).all()
+                taxonomy_actions = [
+                    {
+                        "id": action.id,  # Real UUID from database
+                        "canonical_name": action.canonical_name,
+                        "synonyms": action.synonyms or [],
+                        "category": action.category,
+                        "priority": action.priority or 1
+                    }
+                    for action in actions_db
+                ]
+            finally:
+                db.close()
+        else:
+            actions_db = db.query(CookingAction).all()
+            taxonomy_actions = [
+                {
+                    "id": action.id,
+                    "canonical_name": action.canonical_name,
+                    "synonyms": action.synonyms or [],
+                    "category": action.category,
+                    "priority": action.priority or 1
+                }
+                for action in actions_db
+            ]
+
         matcher = ActionMatcher(taxonomy_actions)
         _extractor = ActionExtractor(matcher, settings.SPACY_MODEL)
     return _extractor
@@ -36,13 +64,13 @@ async def create_recipe(recipe_data: RecipeCreate, db: Session = Depends(get_db)
     - Extracts cooking actions from each step using NLP
     - Returns enriched recipe with action details
     """
-    extractor = get_extractor()
+    extractor = get_extractor(db)
 
     # Create recipe
     recipe = Recipe(
         title=recipe_data.title,
         description=recipe_data.description,
-        metadata=recipe_data.metadata or {}
+        recipe_metadata=recipe_data.recipe_metadata or {}
     )
     db.add(recipe)
     db.flush()  # Get recipe ID
@@ -52,8 +80,8 @@ async def create_recipe(recipe_data: RecipeCreate, db: Session = Depends(get_db)
         # Extract actions from instruction text
         extracted = extractor.extract_actions(step_data.instruction_text)
 
-        # Convert action IDs to UUIDs
-        action_ids = [UUID(action["action_id"]) for action in extracted]
+        # Get action IDs as strings (SQLite compatibility)
+        action_ids = [action["action_id"] for action in extracted]
 
         # Store confidence scores
         confidence_data = {
@@ -78,7 +106,7 @@ async def create_recipe(recipe_data: RecipeCreate, db: Session = Depends(get_db)
 
 
 @router.get("/{recipe_id}", response_model=RecipeResponse)
-async def get_recipe(recipe_id: UUID, db: Session = Depends(get_db)):
+async def get_recipe(recipe_id: str, db: Session = Depends(get_db)):
     """Get recipe by ID with enriched action details"""
     recipe = db.query(Recipe).filter(Recipe.id == recipe_id).first()
 
@@ -102,7 +130,7 @@ def _enrich_recipe_response(recipe: Recipe, db: Session) -> dict:
         "title": recipe.title,
         "description": recipe.description,
         "created_at": recipe.created_at,
-        "metadata": recipe.metadata,
+        "recipe_metadata": recipe.recipe_metadata,
         "steps": []
     }
 

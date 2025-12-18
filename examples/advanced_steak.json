@@ -1,0 +1,81 @@
+{
+  "title": "Pan-Seared Ribeye Steak with Herb Butter",
+  "description": "Restaurant-quality ribeye steak showcasing advanced techniques: searing, basting, resting, and compound butter preparation.",
+  "recipe_metadata": {
+    "servings": 2,
+    "prep_time_minutes": 15,
+    "cook_time_minutes": 20,
+    "difficulty": "hard",
+    "cuisine": "American"
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction_text": "Remove steaks from refrigerator 30 minutes before cooking to bring to room temperature."
+    },
+    {
+      "step_number": 2,
+      "instruction_text": "Score the fat cap of the steaks in a crosshatch pattern using a sharp knife, being careful not to cut into the meat."
+    },
+    {
+      "step_number": 3,
+      "instruction_text": "Pat the steaks completely dry with paper towels and season generously with coarse salt and freshly cracked black pepper on all sides."
+    },
+    {
+      "step_number": 4,
+      "instruction_text": "For the herb butter: Mince fresh rosemary, thyme, and garlic finely."
+    },
+    {
+      "step_number": 5,
+      "instruction_text": "In a bowl, cream the softened butter with the minced herbs, garlic, salt, and lemon zest until well combined."
+    },
+    {
+      "step_number": 6,
+      "instruction_text": "Shape the herb butter into a log using plastic wrap, then refrigerate until firm."
+    },
+    {
+      "step_number": 7,
+      "instruction_text": "Heat a cast-iron skillet over high heat until smoking hot, about 5 minutes."
+    },
+    {
+      "step_number": 8,
+      "instruction_text": "Add a thin layer of oil to the pan and sear the steaks for 3-4 minutes on the first side without moving them, until a deep golden-brown crust forms."
+    },
+    {
+      "step_number": 9,
+      "instruction_text": "Flip the steaks and sear the second side for another 3-4 minutes."
+    },
+    {
+      "step_number": 10,
+      "instruction_text": "Reduce heat to medium and add butter, crushed garlic, and fresh thyme sprigs to the pan."
+    },
+    {
+      "step_number": 11,
+      "instruction_text": "Tilt the pan and continuously baste the steaks with the foaming butter for 2-3 minutes, spooning it over the top."
+    },
+    {
+      "step_number": 12,
+      "instruction_text": "For medium-rare, cook until internal temperature reaches 130°F (54°C) when checked with a meat thermometer."
+    },
+    {
+      "step_number": 13,
+      "instruction_text": "Transfer steaks to a cutting board and let rest for 5-7 minutes to allow juices to redistribute."
+    },
+    {
+      "step_number": 14,
+      "instruction_text": "While resting, slice the herb butter into rounds."
+    },
+    {
+      "step_number": 15,
+      "instruction_text": "Slice the steak against the grain at a 45-degree angle into thick strips."
+    },
+    {
+      "step_number": 16,
+      "instruction_text": "Plate the sliced steak, drizzle with any resting juices, and top with a round of herb butter."
+    },
+    {
+      "step_number": 17,
+      "instruction_text": "Garnish with flaky sea salt and fresh herbs before serving immediately."
+    }
+  ]
+}

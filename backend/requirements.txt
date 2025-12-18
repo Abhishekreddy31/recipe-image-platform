@@ -11,7 +11,7 @@ asyncpg==0.29.0
 
 # NLP
 spacy==3.7.2
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl
+# Note: Install spaCy model separately with: python -m spacy download en_core_web_sm
 
 # Validation & Serialization
 pydantic==2.5.3
@@ -23,6 +23,7 @@ hiredis==2.3.2
 
 # HTTP Client
 httpx==0.26.0
+requests==2.31.0
 
 # Image Processing
 pillow==10.2.0

@@ -1,7 +1,6 @@
 from datetime import datetime
 from uuid import uuid4
-from sqlalchemy import Column, DateTime
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy import Column, DateTime, String
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
@@ -17,5 +16,5 @@ class TimestampMixin:
     )
 
 class UUIDMixin:
-    """Mixin for UUID primary key"""
-    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid4)
+    """Mixin for UUID primary key - stored as String for SQLite compatibility"""
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))

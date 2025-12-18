@@ -1,5 +1,4 @@
-from sqlalchemy import Column, String, Text, Integer
-from sqlalchemy.dialects.postgresql import ARRAY
+from sqlalchemy import Column, String, Text, Integer, JSON
 from .base import Base, UUIDMixin, TimestampMixin
 
 class CookingAction(Base, UUIDMixin, TimestampMixin):
@@ -7,7 +6,7 @@ class CookingAction(Base, UUIDMixin, TimestampMixin):
     __tablename__ = "cooking_actions"
 
     canonical_name = Column(String(100), unique=True, nullable=False, index=True)
-    synonyms = Column(ARRAY(Text), default=list)  # Array of synonym strings
+    synonyms = Column(JSON, default=list)  # JSON array of synonym strings (SQLite compatible)
     description = Column(Text)
     category = Column(String(50), index=True)  # cutting-prep, mixing-combining, etc.
 

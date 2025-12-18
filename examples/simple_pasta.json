@@ -1,0 +1,49 @@
+{
+  "title": "Simple Garlic Pasta",
+  "description": "A quick and easy pasta dish with garlic, olive oil, and parmesan. Perfect for demonstrating basic cooking techniques.",
+  "recipe_metadata": {
+    "servings": 2,
+    "prep_time_minutes": 5,
+    "cook_time_minutes": 15,
+    "difficulty": "easy",
+    "cuisine": "Italian"
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction_text": "Bring a large pot of salted water to a boil."
+    },
+    {
+      "step_number": 2,
+      "instruction_text": "While water heats, peel and mince 4 cloves of garlic finely."
+    },
+    {
+      "step_number": 3,
+      "instruction_text": "Grate the parmesan cheese and set aside in a bowl."
+    },
+    {
+      "step_number": 4,
+      "instruction_text": "Add pasta to the boiling water and cook according to package directions, stirring occasionally."
+    },
+    {
+      "step_number": 5,
+      "instruction_text": "In a large pan, heat olive oil over medium heat and sauté the minced garlic for 1-2 minutes until fragrant but not browned."
+    },
+    {
+      "step_number": 6,
+      "instruction_text": "Drain the pasta, reserving 1 cup of pasta water."
+    },
+    {
+      "step_number": 7,
+      "instruction_text": "Toss the drained pasta with the garlic oil, adding pasta water as needed to create a silky sauce."
+    },
+    {
+      "step_number": 8,
+      "instruction_text": "Remove from heat and fold in the grated parmesan until melted and creamy."
+    },
+    {
+      "step_number": 9,
+      "instruction_text": "Plate immediately and garnish with fresh black pepper and extra parmesan."
+    }
+  ]
+}

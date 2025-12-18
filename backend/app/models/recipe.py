@@ -9,7 +9,7 @@ class Recipe(Base, UUIDMixin, TimestampMixin):
     title = Column(String(255), nullable=False, index=True)
     description = Column(Text)
     author_id = Column(String(100))  # Future: link to user table
-    metadata = Column(JSON)  # Store servings, prep_time, cook_time, etc.
+    recipe_metadata = Column(JSON)  # Store servings, prep_time, cook_time, etc.
 
     # Relationships
     steps = relationship(

@@ -3,10 +3,14 @@ Database Seeding Script - Populate cooking actions from taxonomy
 """
 import json
 import sys
+import os
 from pathlib import Path
 
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
+
+# Change to backend directory
+os.chdir(Path(__file__).parent.parent)
 
 from app.database import get_db_context
 from app.models import CookingAction
@@ -15,6 +19,12 @@ from app.config import settings
 
 def load_taxonomy(path: str) -> dict:
     """Load cooking actions taxonomy from JSON"""
+    # If path is relative, make it absolute from backend directory
+    if not os.path.isabs(path):
+        backend_dir = Path(__file__).parent.parent
+        path = os.path.join(backend_dir, path)
+
+    print(f"Loading taxonomy from: {path}")
     with open(path, 'r') as f:
         return json.load(f)
 

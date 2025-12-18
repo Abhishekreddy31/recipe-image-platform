@@ -1,0 +1,11 @@
+{
+  "title": "Test Recipe with Images",
+  "description": "Testing image display functionality",
+  "steps": [
+    {"step_number": 1, "instruction_text": "Dice the onions and mince the garlic."},
+    {"step_number": 2, "instruction_text": "Slice the carrots and grate the cheese."},
+    {"step_number": 3, "instruction_text": "Whisk the eggs and fold in the flour."},
+    {"step_number": 4, "instruction_text": "Sauté the vegetables until golden brown."},
+    {"step_number": 5, "instruction_text": "Simmer for 20 minutes, then serve."}
+  ]
+}

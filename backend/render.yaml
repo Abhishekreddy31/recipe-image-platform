@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: recipe-platform-backend
+    env: python
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: |
+      pip install -r requirements.txt
+      python -m spacy download en_core_web_sm
+      python scripts/5_seed_database.py
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./recipe_platform.db
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: CORS_ORIGINS
+        generateValue: true
+    disk:
+      name: recipe-data
+      mountPath: /opt/render/project/src
+      sizeGB: 1

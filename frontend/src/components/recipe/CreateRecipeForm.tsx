@@ -3,7 +3,7 @@
  */
 import { useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
-import { recipeService } from '../../services/recipeService';
+import recipeService from '../../services/recipeService';
 import type { Recipe, RecipeStepCreate } from '../../types/recipe';
 
 interface CreateRecipeFormProps {

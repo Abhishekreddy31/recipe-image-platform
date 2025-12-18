@@ -23,7 +23,7 @@ class RecipeCreate(BaseModel):
     title: str = Field(min_length=1, max_length=255)
     description: Optional[str] = None
     steps: List[RecipeStepCreate] = Field(min_items=1)
-    metadata: Optional[Dict[str, Any]] = Field(default_factory=dict)
+    recipe_metadata: Optional[Dict[str, Any]] = Field(default_factory=dict)
 
 class RecipeResponse(BaseModel):
     id: UUID
@@ -31,7 +31,7 @@ class RecipeResponse(BaseModel):
     description: Optional[str]
     steps: List[RecipeStepResponse]
     created_at: datetime
-    metadata: Optional[Dict[str, Any]]
+    recipe_metadata: Optional[Dict[str, Any]]
 
     class Config:
         from_attributes = True

@@ -2,7 +2,7 @@
  * RecipeView - Main container component for displaying a recipe
  */
 import { useQuery } from '@tanstack/react-query';
-import { recipeService } from '../../services/recipeService';
+import recipeService from '../../services/recipeService';
 import RecipeStep from './RecipeStep';
 
 interface RecipeViewProps {

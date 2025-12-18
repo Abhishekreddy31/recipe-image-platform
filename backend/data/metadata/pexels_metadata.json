@@ -1,0 +1,302 @@
+{
+  "dice": {
+    "image_url": "/static/images/techniques/dice-pexels.jpg",
+    "photographer": "Los Muertos Crew",
+    "pexels_url": "https://www.pexels.com/photo/close-up-photo-of-a-person-slicing-cilantro-7601397/",
+    "attribution": "Photo by Los Muertos Crew from Pexels"
+  },
+  "mince": {
+    "image_url": "/static/images/techniques/mince-pexels.jpg",
+    "photographer": "Los Muertos Crew",
+    "pexels_url": "https://www.pexels.com/photo/a-person-chopping-garlic-7601452/",
+    "attribution": "Photo by Los Muertos Crew from Pexels"
+  },
+  "chop": {
+    "image_url": "/static/images/techniques/chop-pexels.jpg",
+    "photographer": "Craig Adderley",
+    "pexels_url": "https://www.pexels.com/photo/person-chopping-fruit-2005929/",
+    "attribution": "Photo by Craig Adderley from Pexels"
+  },
+  "slice": {
+    "image_url": "/static/images/techniques/slice-pexels.jpg",
+    "photographer": "Karola G",
+    "pexels_url": "https://www.pexels.com/photo/photo-of-a-person-slicing-a-healthy-sandwich-4963663/",
+    "attribution": "Photo by Karola G from Pexels"
+  },
+  "julienne": {
+    "image_url": "/static/images/techniques/julienne-pexels.jpg",
+    "photographer": "cottonbro studio",
+    "pexels_url": "https://www.pexels.com/photo/person-slicing-red-cabbage-on-wooden-chopping-board-6811353/",
+    "attribution": "Photo by cottonbro studio from Pexels"
+  },
+  "brunoise": {
+    "image_url": "/static/images/techniques/brunoise-pexels.jpg",
+    "photographer": "Kampus Production",
+    "pexels_url": "https://www.pexels.com/photo/a-person-slicing-a-tomato-8629034/",
+    "attribution": "Photo by Kampus Production from Pexels"
+  },
+  "chiffonade": {
+    "image_url": "/static/images/techniques/chiffonade-pexels.jpg",
+    "photographer": "Guto Macedo",
+    "pexels_url": "https://www.pexels.com/photo/person-slicing-a-pizza-8444543/",
+    "attribution": "Photo by Guto Macedo from Pexels"
+  },
+  "peel": {
+    "image_url": "/static/images/techniques/peel-pexels.jpg",
+    "photographer": "cottonbro studio",
+    "pexels_url": "https://www.pexels.com/photo/man-peel-potato-6636765/",
+    "attribution": "Photo by cottonbro studio from Pexels"
+  },
+  "zest": {
+    "image_url": "/static/images/techniques/zest-pexels.jpg",
+    "photographer": "Timur Weber",
+    "pexels_url": "https://www.pexels.com/photo/people-holding-drinks-in-close-up-photography-8679436/",
+    "attribution": "Photo by Timur Weber from Pexels"
+  },
+  "grate": {
+    "image_url": "/static/images/techniques/grate-pexels.jpg",
+    "photographer": "Karola G",
+    "pexels_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-person-grating-a-cheese-6659611/",
+    "attribution": "Photo by Karola G from Pexels"
+  },
+  "shred": {
+    "image_url": "/static/images/techniques/shred-pexels.jpg",
+    "photographer": "Cats Coming",
+    "pexels_url": "https://www.pexels.com/photo/bowl-of-vegetable-salad-406152/",
+    "attribution": "Photo by Cats Coming from Pexels"
+  },
+  "debone": {
+    "image_url": "/static/images/techniques/debone-pexels.jpg",
+    "photographer": "Kindel Media",
+    "pexels_url": "https://www.pexels.com/photo/slicing-of-raw-tuna-8352014/",
+    "attribution": "Photo by Kindel Media from Pexels"
+  },
+  "fillet": {
+    "image_url": "/static/images/techniques/fillet-pexels.jpg",
+    "photographer": "Ivan S",
+    "pexels_url": "https://www.pexels.com/photo/a-person-removing-the-skin-of-a-salmon-8951039/",
+    "attribution": "Photo by Ivan S from Pexels"
+  },
+  "score": {
+    "image_url": "/static/images/techniques/score-pexels.jpg",
+    "photographer": "Los Muertos Crew",
+    "pexels_url": "https://www.pexels.com/photo/close-up-shot-of-a-person-slicing-cooked-meat-8477294/",
+    "attribution": "Photo by Los Muertos Crew from Pexels"
+  },
+  "tenderize": {
+    "image_url": "/static/images/techniques/tenderize-pexels.jpg",
+    "photographer": "Los Muertos Crew",
+    "pexels_url": "https://www.pexels.com/photo/close-up-shot-of-a-person-slicing-cooked-meat-8477294/",
+    "attribution": "Photo by Los Muertos Crew from Pexels"
+  },
+  "whisk": {
+    "image_url": "/static/images/techniques/whisk-pexels.jpg",
+    "photographer": "Felicity Tai",
+    "pexels_url": "https://www.pexels.com/photo/close-up-of-woman-reaching-for-eggs-in-a-bowl-7965918/",
+    "attribution": "Photo by Felicity Tai from Pexels"
+  },
+  "stir": {
+    "image_url": "/static/images/techniques/stir-pexels.jpg",
+    "photographer": "Antonius Ferret",
+    "pexels_url": "https://www.pexels.com/photo/close-up-of-women-hands-stir-in-pot-6223147/",
+    "attribution": "Photo by Antonius Ferret from Pexels"
+  },
+  "fold": {
+    "image_url": "/static/images/techniques/fold-pexels.jpg",
+    "photographer": "Ivan S",
+    "pexels_url": "https://www.pexels.com/photo/sisters-baking-on-the-table-5446844/",
+    "attribution": "Photo by Ivan S from Pexels"
+  },
+  "beat": {
+    "image_url": "/static/images/techniques/beat-pexels.jpg",
+    "photographer": "Felicity Tai",
+    "pexels_url": "https://www.pexels.com/photo/close-up-of-woman-reaching-for-eggs-in-a-bowl-7965918/",
+    "attribution": "Photo by Felicity Tai from Pexels"
+  },
+  "cream": {
+    "image_url": "/static/images/techniques/cream-pexels.jpg",
+    "photographer": "Felicity Tai",
+    "pexels_url": "https://www.pexels.com/photo/bowl-with-flour-on-electric-scales-7965962/",
+    "attribution": "Photo by Felicity Tai from Pexels"
+  },
+  "knead": {
+    "image_url": "/static/images/techniques/knead-pexels.jpg",
+    "photographer": "Beyza Kaplan",
+    "pexels_url": "https://www.pexels.com/photo/man-working-with-dough-in-bakery-16488533/",
+    "attribution": "Photo by Beyza Kaplan from Pexels"
+  },
+  "toss": {
+    "image_url": "/static/images/techniques/toss-pexels.jpg",
+    "photographer": "MART  PRODUCTION",
+    "pexels_url": "https://www.pexels.com/photo/a-person-holding-cooked-food-on-white-bowl-8165329/",
+    "attribution": "Photo by MART  PRODUCTION from Pexels"
+  },
+  "emulsify": {
+    "image_url": "/static/images/techniques/emulsify-pexels.jpg",
+    "photographer": "Maarten van den Heuvel",
+    "pexels_url": "https://www.pexels.com/photo/person-holding-sliced-vegetable-2284166/",
+    "attribution": "Photo by Maarten van den Heuvel from Pexels"
+  },
+  "saut\u00e9": {
+    "image_url": "/static/images/techniques/saut\u00e9-pexels.jpg",
+    "photographer": "cottonbro studio",
+    "pexels_url": "https://www.pexels.com/photo/person-holding-stainless-steel-bowl-with-vegetable-salad-4252141/",
+    "attribution": "Photo by cottonbro studio from Pexels"
+  },
+  "stir-fry": {
+    "image_url": "/static/images/techniques/stir-fry-pexels.jpg",
+    "photographer": "cottonbro studio",
+    "pexels_url": "https://www.pexels.com/photo/person-holding-stainless-steel-bowl-with-vegetable-salad-4252141/",
+    "attribution": "Photo by cottonbro studio from Pexels"
+  },
+  "deep-fry": {
+    "image_url": "/static/images/techniques/deep-fry-pexels.jpg",
+    "photographer": "Ron Lach",
+    "pexels_url": "https://www.pexels.com/photo/boiling-in-oil-8880728/",
+    "attribution": "Photo by Ron Lach from Pexels"
+  },
+  "roast": {
+    "image_url": "/static/images/techniques/roast-pexels.jpg",
+    "photographer": "Karola G",
+    "pexels_url": "https://www.pexels.com/photo/baked-cauliflower-on-a-baking-paper-4960143/",
+    "attribution": "Photo by Karola G from Pexels"
+  },
+  "bake": {
+    "image_url": "/static/images/techniques/bake-pexels.jpg",
+    "photographer": "ROMAN ODINTSOV",
+    "pexels_url": "https://www.pexels.com/photo/brown-bread-in-close-up-photography-5336342/",
+    "attribution": "Photo by ROMAN ODINTSOV from Pexels"
+  },
+  "grill": {
+    "image_url": "/static/images/techniques/grill-pexels.jpg",
+    "photographer": "Min An",
+    "pexels_url": "https://www.pexels.com/photo/close-up-photo-of-man-cooking-meat-1482803/",
+    "attribution": "Photo by Min An from Pexels"
+  },
+  "broil": {
+    "image_url": "/static/images/techniques/broil-pexels.jpg",
+    "photographer": "Meruyert Gonullu",
+    "pexels_url": "https://www.pexels.com/photo/glass-bowl-with-food-inside-the-oven-8289922/",
+    "attribution": "Photo by Meruyert Gonullu from Pexels"
+  },
+  "sear": {
+    "image_url": "/static/images/techniques/sear-pexels.jpg",
+    "photographer": "Deane Bayas",
+    "pexels_url": "https://www.pexels.com/photo/steak-on-a-pan-13854062/",
+    "attribution": "Photo by Deane Bayas from Pexels"
+  },
+  "toast": {
+    "image_url": "/static/images/techniques/toast-pexels.jpg",
+    "photographer": "Christina & Peter",
+    "pexels_url": "https://www.pexels.com/photo/close-up-shot-of-toasted-bread-slice-30904194/",
+    "attribution": "Photo by Christina & Peter from Pexels"
+  },
+  "caramelize": {
+    "image_url": "/static/images/techniques/caramelize-pexels.jpg",
+    "photographer": "HONG SON",
+    "pexels_url": "https://www.pexels.com/photo/madeleines-and-a-cup-of-tea-5194494/",
+    "attribution": "Photo by HONG SON from Pexels"
+  },
+  "boil": {
+    "image_url": "/static/images/techniques/boil-pexels.jpg",
+    "photographer": "RDNE Stock project",
+    "pexels_url": "https://www.pexels.com/photo/pot-with-boiling-water-and-garlic-10432389/",
+    "attribution": "Photo by RDNE Stock project from Pexels"
+  },
+  "simmer": {
+    "image_url": "/static/images/techniques/simmer-pexels.jpg",
+    "photographer": "Antonius Ferret",
+    "pexels_url": "https://www.pexels.com/photo/close-up-of-women-hands-stir-in-pot-6223147/",
+    "attribution": "Photo by Antonius Ferret from Pexels"
+  },
+  "poach": {
+    "image_url": "/static/images/techniques/poach-pexels.jpg",
+    "photographer": "Nicola Barts",
+    "pexels_url": "https://www.pexels.com/photo/a-young-girl-eating-her-breakfast-7943973/",
+    "attribution": "Photo by Nicola Barts from Pexels"
+  },
+  "steam": {
+    "image_url": "/static/images/techniques/steam-pexels.jpg",
+    "photographer": "Yuen Tou  Zan",
+    "pexels_url": "https://www.pexels.com/photo/steamed-dumplings-in-bamboo-basket-on-white-background-35144940/",
+    "attribution": "Photo by Yuen Tou  Zan from Pexels"
+  },
+  "blanch": {
+    "image_url": "/static/images/techniques/blanch-pexels.jpg",
+    "photographer": "Cihan Y\u00fcce",
+    "pexels_url": "https://www.pexels.com/photo/sliced-onions-in-a-pot-12181060/",
+    "attribution": "Photo by Cihan Y\u00fcce from Pexels"
+  },
+  "parboil": {
+    "image_url": "/static/images/techniques/parboil-pexels.jpg",
+    "photographer": "Cihan Y\u00fcce",
+    "pexels_url": "https://www.pexels.com/photo/sliced-onions-in-a-pot-12181060/",
+    "attribution": "Photo by Cihan Y\u00fcce from Pexels"
+  },
+  "braise": {
+    "image_url": "/static/images/techniques/braise-pexels.jpg",
+    "photographer": "Markus Winkler",
+    "pexels_url": "https://www.pexels.com/photo/hot-pot-with-meat-and-vegetables-13688385/",
+    "attribution": "Photo by Markus Winkler from Pexels"
+  },
+  "stew": {
+    "image_url": "/static/images/techniques/stew-pexels.jpg",
+    "photographer": "Dosio Dosev",
+    "pexels_url": "https://www.pexels.com/photo/closeup-of-a-meat-dish-being-cooked-in-a-pot-16369774/",
+    "attribution": "Photo by Dosio Dosev from Pexels"
+  },
+  "sous-vide": {
+    "image_url": "/static/images/techniques/sous-vide-pexels.jpg",
+    "photographer": "Craig Adderley",
+    "pexels_url": "https://www.pexels.com/photo/woman-in-bath-tub-2306210/",
+    "attribution": "Photo by Craig Adderley from Pexels"
+  },
+  "pressure-cook": {
+    "image_url": "/static/images/techniques/pressure-cook-pexels.jpg",
+    "photographer": "Artem Mizyuk",
+    "pexels_url": "https://www.pexels.com/photo/selective-photo-of-teapot-cover-1674114/",
+    "attribution": "Photo by Artem Mizyuk from Pexels"
+  },
+  "glaze": {
+    "image_url": "/static/images/techniques/glaze-pexels.jpg",
+    "photographer": "RDNE Stock project",
+    "pexels_url": "https://www.pexels.com/photo/hand-brushing-roasted-chicken-5847882/",
+    "attribution": "Photo by RDNE Stock project from Pexels"
+  },
+  "garnish": {
+    "image_url": "/static/images/techniques/garnish-pexels.jpg",
+    "photographer": "B\u00fc\u015fra Yurt",
+    "pexels_url": "https://www.pexels.com/photo/plate-of-fresh-pasta-with-topping-being-prepared-31769299/",
+    "attribution": "Photo by B\u00fc\u015fra Yurt from Pexels"
+  },
+  "plate": {
+    "image_url": "/static/images/techniques/plate-pexels.jpg",
+    "photographer": "ELEVATE",
+    "pexels_url": "https://www.pexels.com/photo/chef-preparing-vegetable-dish-on-tree-slab-1267320/",
+    "attribution": "Photo by ELEVATE from Pexels"
+  },
+  "drizzle": {
+    "image_url": "/static/images/techniques/drizzle-pexels.jpg",
+    "photographer": "RDNE Stock project",
+    "pexels_url": "https://www.pexels.com/photo/a-person-holding-a-glass-bottle-5737246/",
+    "attribution": "Photo by RDNE Stock project from Pexels"
+  },
+  "dust": {
+    "image_url": "/static/images/techniques/dust-pexels.jpg",
+    "photographer": "Klaus Nielsen",
+    "pexels_url": "https://www.pexels.com/photo/close-up-photo-of-sifting-of-flour-6287221/",
+    "attribution": "Photo by Klaus Nielsen from Pexels"
+  },
+  "rest": {
+    "image_url": "/static/images/techniques/rest-pexels.jpg",
+    "photographer": "Rachel Claire",
+    "pexels_url": "https://www.pexels.com/photo/person-holding-raw-meat-on-brown-wooden-table-8112382/",
+    "attribution": "Photo by Rachel Claire from Pexels"
+  },
+  "reduce": {
+    "image_url": "/static/images/techniques/reduce-pexels.jpg",
+    "photographer": "Antonius Ferret",
+    "pexels_url": "https://www.pexels.com/photo/close-up-of-women-hands-stir-in-pot-6223147/",
+    "attribution": "Photo by Antonius Ferret from Pexels"
+  }
+}

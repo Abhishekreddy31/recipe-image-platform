@@ -13,7 +13,11 @@ export default function TechniqueImage({ action }: TechniqueImageProps) {
   const [imageError, setImageError] = useState(false);
 
   const hasImage = action.image_url || action.thumbnail_url;
-  const imageUrl = action.thumbnail_url || action.image_url;
+
+  // Build full image URL - images are served from backend root, not /api/v1
+  const BACKEND_BASE = import.meta.env.VITE_API_BASE_URL?.replace('/api/v1', '') || 'http://localhost:8000';
+  const relativeUrl = action.thumbnail_url || action.image_url;
+  const imageUrl = relativeUrl ? `${BACKEND_BASE}${relativeUrl}` : null;
 
   if (!hasImage || imageError) {
     return (
