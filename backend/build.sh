@@ -15,7 +15,10 @@ pip install https://github.com/explosion/spacy-models/releases/download/en_core_
 echo "==> Creating database tables..."
 python -c "from app.database import init_db; init_db()"
 
-echo "==> Seeding database..."
+echo "==> Seeding cooking actions..."
 python scripts/5_seed_database.py
+
+echo "==> Seeding example recipes..."
+python scripts/6_seed_recipes.py
 
 echo "==> Build completed successfully!"

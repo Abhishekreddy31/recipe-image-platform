@@ -58,6 +58,19 @@ def seed_cooking_actions():
                     print(f"  ⏭️  Skipping '{action_data['canonical_name']}' (already exists)")
                     continue
 
+                # Auto-detect image file for this action
+                action_name = action_data["canonical_name"]
+                image_path = None
+
+                # Try different image file patterns
+                import os
+                images_dir = "backend/static/images/techniques"
+                for pattern in [f"{action_name}-pexels.jpg", f"{action_name}-curated.jpg", f"{action_name}-demo.jpg"]:
+                    full_path = os.path.join(images_dir, pattern)
+                    if os.path.exists(full_path):
+                        image_path = f"/static/images/techniques/{pattern}"
+                        break
+
                 # Create new cooking action
                 action = CookingAction(
                     canonical_name=action_data["canonical_name"],
@@ -66,11 +79,10 @@ def seed_cooking_actions():
                     category=category_id,
                     priority=action_data.get("priority", 1),
                     difficulty=action_data.get("difficulty", "easy"),
-                    # Images will be added later after curation
-                    image_url=None,
-                    thumbnail_url=None,
-                    attribution=None,
-                    license=None
+                    image_url=image_path,
+                    thumbnail_url=image_path,  # Use same image for thumbnail
+                    attribution="Photo from Pexels",
+                    license="Pexels License"
                 )
 
                 db.add(action)
