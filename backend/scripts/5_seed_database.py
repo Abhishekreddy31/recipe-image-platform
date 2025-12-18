@@ -64,11 +64,13 @@ def seed_cooking_actions():
 
                 # Try different image file patterns
                 import os
-                images_dir = "backend/static/images/techniques"
+                # We're already in backend/ directory after os.chdir() above
+                images_dir = "static/images/techniques"
                 for pattern in [f"{action_name}-pexels.jpg", f"{action_name}-curated.jpg", f"{action_name}-demo.jpg"]:
                     full_path = os.path.join(images_dir, pattern)
                     if os.path.exists(full_path):
                         image_path = f"/static/images/techniques/{pattern}"
+                        print(f"    Found image: {pattern}")
                         break
 
                 # Create new cooking action

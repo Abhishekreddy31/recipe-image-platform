@@ -18,6 +18,9 @@ python -c "from app.database import init_db; init_db()"
 echo "==> Seeding cooking actions..."
 python scripts/5_seed_database.py
 
+echo "==> Linking images to cooking actions..."
+python scripts/8_migrate_action_images.py
+
 echo "==> Seeding example recipes..."
 python scripts/6_seed_recipes.py
 
