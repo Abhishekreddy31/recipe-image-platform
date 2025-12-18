@@ -1,0 +1,542 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2025-12-18",
+  "description": "Comprehensive taxonomy of 50 core cooking actions for MVP",
+  "categories": [
+    {
+      "id": "cutting-prep",
+      "name": "Cutting & Preparation",
+      "description": "Techniques for cutting and preparing ingredients",
+      "actions": [
+        {
+          "id": "dice",
+          "canonical_name": "dice",
+          "synonyms": ["cube", "cut into cubes", "dicing", "diced"],
+          "description": "Cut food into small, uniform cubes (typically 0.5-1 cm)",
+          "category": "cutting-prep",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["onions", "vegetables", "potatoes", "carrots"]
+        },
+        {
+          "id": "mince",
+          "canonical_name": "mince",
+          "synonyms": ["chop fine", "finely chop", "minced", "mincing", "finely chopped"],
+          "description": "Cut into very small, fine pieces (smaller than dice)",
+          "category": "cutting-prep",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["garlic", "ginger", "herbs", "shallots"]
+        },
+        {
+          "id": "chop",
+          "canonical_name": "chop",
+          "synonyms": ["rough cut", "cut up", "chopped", "chopping", "cut"],
+          "description": "Cut into irregular pieces of varying sizes",
+          "category": "cutting-prep",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["vegetables", "herbs", "nuts", "onions"]
+        },
+        {
+          "id": "slice",
+          "canonical_name": "slice",
+          "synonyms": ["cut thin", "sliced", "slicing", "thinly slice"],
+          "description": "Cut into thin, flat pieces",
+          "category": "cutting-prep",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["bread", "tomatoes", "onions", "meat"]
+        },
+        {
+          "id": "julienne",
+          "canonical_name": "julienne",
+          "synonyms": ["matchstick cut", "julienned", "cut into matchsticks"],
+          "description": "Cut into thin, uniform matchstick-shaped strips",
+          "category": "cutting-prep",
+          "priority": 2,
+          "difficulty": "medium",
+          "common_ingredients": ["carrots", "bell peppers", "zucchini"]
+        },
+        {
+          "id": "brunoise",
+          "canonical_name": "brunoise",
+          "synonyms": ["fine dice", "tiny dice"],
+          "description": "Cut into very fine dice (1-2mm cubes)",
+          "category": "cutting-prep",
+          "priority": 3,
+          "difficulty": "hard",
+          "common_ingredients": ["vegetables", "carrots", "celery"]
+        },
+        {
+          "id": "chiffonade",
+          "canonical_name": "chiffonade",
+          "synonyms": ["ribbon cut", "shred herbs"],
+          "description": "Cut leafy vegetables or herbs into thin ribbons",
+          "category": "cutting-prep",
+          "priority": 2,
+          "difficulty": "medium",
+          "common_ingredients": ["basil", "mint", "lettuce", "spinach"]
+        },
+        {
+          "id": "peel",
+          "canonical_name": "peel",
+          "synonyms": ["pare", "skin", "peeled", "peeling"],
+          "description": "Remove the outer skin or rind",
+          "category": "cutting-prep",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["potatoes", "carrots", "apples", "citrus"]
+        },
+        {
+          "id": "zest",
+          "canonical_name": "zest",
+          "synonyms": ["grate citrus", "zested", "zesting"],
+          "description": "Remove the colored outer layer of citrus peel",
+          "category": "cutting-prep",
+          "priority": 2,
+          "difficulty": "easy",
+          "common_ingredients": ["lemon", "lime", "orange", "citrus"]
+        },
+        {
+          "id": "grate",
+          "canonical_name": "grate",
+          "synonyms": ["shred fine", "grated", "grating"],
+          "description": "Reduce to small particles using a grater",
+          "category": "cutting-prep",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["cheese", "vegetables", "chocolate", "ginger"]
+        },
+        {
+          "id": "shred",
+          "canonical_name": "shred",
+          "synonyms": ["tear", "rip", "shredded", "shredding"],
+          "description": "Cut or tear into thin strips",
+          "category": "cutting-prep",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["lettuce", "cabbage", "chicken", "cheese"]
+        },
+        {
+          "id": "debone",
+          "canonical_name": "debone",
+          "synonyms": ["bone", "remove bones", "deboned", "deboning"],
+          "description": "Remove bones from meat or fish",
+          "category": "cutting-prep",
+          "priority": 3,
+          "difficulty": "hard",
+          "common_ingredients": ["chicken", "fish", "meat"]
+        },
+        {
+          "id": "fillet",
+          "canonical_name": "fillet",
+          "synonyms": ["cut fillet", "filleted", "filleting"],
+          "description": "Remove bones and cut into boneless pieces",
+          "category": "cutting-prep",
+          "priority": 3,
+          "difficulty": "hard",
+          "common_ingredients": ["fish", "chicken breast"]
+        },
+        {
+          "id": "score",
+          "canonical_name": "score",
+          "synonyms": ["make cuts", "scored", "scoring", "slash"],
+          "description": "Make shallow cuts in surface",
+          "category": "cutting-prep",
+          "priority": 2,
+          "difficulty": "medium",
+          "common_ingredients": ["bread", "meat", "fish"]
+        },
+        {
+          "id": "tenderize",
+          "canonical_name": "tenderize",
+          "synonyms": ["pound", "flatten", "tenderized", "tenderizing"],
+          "description": "Pound meat to make it thinner and more tender",
+          "category": "cutting-prep",
+          "priority": 2,
+          "difficulty": "easy",
+          "common_ingredients": ["chicken breast", "pork", "beef"]
+        }
+      ]
+    },
+    {
+      "id": "mixing-combining",
+      "name": "Mixing & Combining",
+      "description": "Techniques for mixing and combining ingredients",
+      "actions": [
+        {
+          "id": "whisk",
+          "canonical_name": "whisk",
+          "synonyms": ["beat with whisk", "whisked", "whisking"],
+          "description": "Beat ingredients rapidly with a whisk to incorporate air",
+          "category": "mixing-combining",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["eggs", "cream", "sauces", "batters"]
+        },
+        {
+          "id": "stir",
+          "canonical_name": "stir",
+          "synonyms": ["mix", "stirred", "stirring", "combine"],
+          "description": "Mix ingredients with a circular motion",
+          "category": "mixing-combining",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["sauces", "soups", "stews", "batters"]
+        },
+        {
+          "id": "fold",
+          "canonical_name": "fold",
+          "synonyms": ["gently combine", "fold in", "folded", "folding", "gently mix"],
+          "description": "Gently combine ingredients with a lifting motion",
+          "category": "mixing-combining",
+          "priority": 2,
+          "difficulty": "medium",
+          "common_ingredients": ["egg whites", "whipped cream", "batters"]
+        },
+        {
+          "id": "beat",
+          "canonical_name": "beat",
+          "synonyms": ["mix vigorously", "beaten", "beating"],
+          "description": "Mix ingredients vigorously to incorporate air",
+          "category": "mixing-combining",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["eggs", "butter", "sugar", "cream"]
+        },
+        {
+          "id": "cream",
+          "canonical_name": "cream",
+          "synonyms": ["blend until fluffy", "creamed", "creaming", "cream together"],
+          "description": "Beat butter and sugar until light and fluffy",
+          "category": "mixing-combining",
+          "priority": 2,
+          "difficulty": "easy",
+          "common_ingredients": ["butter", "sugar"]
+        },
+        {
+          "id": "knead",
+          "canonical_name": "knead",
+          "synonyms": ["work dough", "kneaded", "kneading"],
+          "description": "Work dough by pressing and folding to develop gluten",
+          "category": "mixing-combining",
+          "priority": 2,
+          "difficulty": "medium",
+          "common_ingredients": ["bread dough", "pizza dough", "pasta dough"]
+        },
+        {
+          "id": "toss",
+          "canonical_name": "toss",
+          "synonyms": ["combine by tossing", "tossed", "tossing"],
+          "description": "Mix ingredients by lifting and turning",
+          "category": "mixing-combining",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["salads", "pasta", "vegetables"]
+        },
+        {
+          "id": "emulsify",
+          "canonical_name": "emulsify",
+          "synonyms": ["blend liquids", "emulsified", "emulsifying"],
+          "description": "Combine two liquids that normally don't mix",
+          "category": "mixing-combining",
+          "priority": 3,
+          "difficulty": "hard",
+          "common_ingredients": ["oil", "vinegar", "egg yolks"]
+        }
+      ]
+    },
+    {
+      "id": "dry-heat-cooking",
+      "name": "Dry Heat Cooking",
+      "description": "Cooking methods using dry heat",
+      "actions": [
+        {
+          "id": "saute",
+          "canonical_name": "sauté",
+          "synonyms": ["pan-fry", "fry lightly", "sauteed", "sautéed", "sauteing", "saute", "pan fry"],
+          "description": "Cook quickly in a small amount of fat over high heat",
+          "category": "dry-heat-cooking",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["vegetables", "mushrooms", "garlic", "meat"]
+        },
+        {
+          "id": "stir-fry",
+          "canonical_name": "stir-fry",
+          "synonyms": ["quick fry", "stir fried", "stir frying", "stirfry"],
+          "description": "Cook quickly while stirring in a wok or pan",
+          "category": "dry-heat-cooking",
+          "priority": 1,
+          "difficulty": "medium",
+          "common_ingredients": ["vegetables", "meat", "noodles", "rice"]
+        },
+        {
+          "id": "deep-fry",
+          "canonical_name": "deep-fry",
+          "synonyms": ["fry in oil", "deep fried", "deep frying", "deep fry"],
+          "description": "Cook by immersing in hot oil",
+          "category": "dry-heat-cooking",
+          "priority": 2,
+          "difficulty": "medium",
+          "common_ingredients": ["chicken", "fish", "potatoes", "vegetables"]
+        },
+        {
+          "id": "roast",
+          "canonical_name": "roast",
+          "synonyms": ["oven roast", "roasted", "roasting"],
+          "description": "Cook with dry heat in an oven",
+          "category": "dry-heat-cooking",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["chicken", "vegetables", "meat", "potatoes"]
+        },
+        {
+          "id": "bake",
+          "canonical_name": "bake",
+          "synonyms": ["oven bake", "baked", "baking"],
+          "description": "Cook in an oven with dry heat",
+          "category": "dry-heat-cooking",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["bread", "cakes", "cookies", "casseroles"]
+        },
+        {
+          "id": "grill",
+          "canonical_name": "grill",
+          "synonyms": ["barbecue", "BBQ", "grilled", "grilling", "bbq"],
+          "description": "Cook over direct heat (gas, charcoal, or electric)",
+          "category": "dry-heat-cooking",
+          "priority": 1,
+          "difficulty": "medium",
+          "common_ingredients": ["meat", "vegetables", "fish", "burgers"]
+        },
+        {
+          "id": "broil",
+          "canonical_name": "broil",
+          "synonyms": ["top heat", "broiled", "broiling"],
+          "description": "Cook with direct heat from above",
+          "category": "dry-heat-cooking",
+          "priority": 2,
+          "difficulty": "easy",
+          "common_ingredients": ["fish", "vegetables", "meat"]
+        },
+        {
+          "id": "sear",
+          "canonical_name": "sear",
+          "synonyms": ["brown quickly", "seared", "searing"],
+          "description": "Brown the surface quickly with high heat",
+          "category": "dry-heat-cooking",
+          "priority": 2,
+          "difficulty": "medium",
+          "common_ingredients": ["meat", "fish", "vegetables"]
+        },
+        {
+          "id": "toast",
+          "canonical_name": "toast",
+          "synonyms": ["brown by heat", "toasted", "toasting"],
+          "description": "Brown by applying dry heat",
+          "category": "dry-heat-cooking",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["bread", "nuts", "seeds", "spices"]
+        },
+        {
+          "id": "caramelize",
+          "canonical_name": "caramelize",
+          "synonyms": ["brown sugars", "caramelized", "caramelizing"],
+          "description": "Cook until natural sugars brown and develop flavor",
+          "category": "dry-heat-cooking",
+          "priority": 2,
+          "difficulty": "medium",
+          "common_ingredients": ["onions", "sugar", "vegetables"]
+        }
+      ]
+    },
+    {
+      "id": "moist-heat-cooking",
+      "name": "Moist Heat Cooking",
+      "description": "Cooking methods using liquid or steam",
+      "actions": [
+        {
+          "id": "boil",
+          "canonical_name": "boil",
+          "synonyms": ["cook in boiling water", "boiled", "boiling", "bring to boil", "bring to a boil"],
+          "description": "Cook in liquid at 100°C/212°F with bubbles",
+          "category": "moist-heat-cooking",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["pasta", "eggs", "potatoes", "vegetables"]
+        },
+        {
+          "id": "simmer",
+          "canonical_name": "simmer",
+          "synonyms": ["gentle boil", "simmered", "simmering", "gently simmer"],
+          "description": "Cook in liquid just below boiling (gentle bubbles)",
+          "category": "moist-heat-cooking",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["sauces", "soups", "stews", "stocks"]
+        },
+        {
+          "id": "poach",
+          "canonical_name": "poach",
+          "synonyms": ["cook in liquid", "poached", "poaching"],
+          "description": "Cook gently in simmering liquid",
+          "category": "moist-heat-cooking",
+          "priority": 2,
+          "difficulty": "medium",
+          "common_ingredients": ["eggs", "fish", "chicken", "fruits"]
+        },
+        {
+          "id": "steam",
+          "canonical_name": "steam",
+          "synonyms": ["cook with steam", "steamed", "steaming"],
+          "description": "Cook using hot steam",
+          "category": "moist-heat-cooking",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["vegetables", "fish", "dumplings", "rice"]
+        },
+        {
+          "id": "blanch",
+          "canonical_name": "blanch",
+          "synonyms": ["briefly boil", "blanched", "blanching", "parboil"],
+          "description": "Briefly cook in boiling water then shock in ice water",
+          "category": "moist-heat-cooking",
+          "priority": 2,
+          "difficulty": "easy",
+          "common_ingredients": ["vegetables", "tomatoes", "nuts"]
+        },
+        {
+          "id": "parboil",
+          "canonical_name": "parboil",
+          "synonyms": ["partially boil", "parboiled", "parboiling"],
+          "description": "Partially cook by boiling",
+          "category": "moist-heat-cooking",
+          "priority": 2,
+          "difficulty": "easy",
+          "common_ingredients": ["potatoes", "vegetables", "rice"]
+        },
+        {
+          "id": "braise",
+          "canonical_name": "braise",
+          "synonyms": ["slow cook in liquid", "braised", "braising"],
+          "description": "Cook slowly in covered pot with small amount of liquid",
+          "category": "moist-heat-cooking",
+          "priority": 2,
+          "difficulty": "medium",
+          "common_ingredients": ["meat", "vegetables", "tough cuts"]
+        },
+        {
+          "id": "stew",
+          "canonical_name": "stew",
+          "synonyms": ["simmer in liquid", "stewed", "stewing"],
+          "description": "Cook slowly in liquid at low temperature",
+          "category": "moist-heat-cooking",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["meat", "vegetables", "legumes"]
+        },
+        {
+          "id": "sous-vide",
+          "canonical_name": "sous-vide",
+          "synonyms": ["vacuum cook", "sous vide", "cook sous vide"],
+          "description": "Cook vacuum-sealed food in water bath at precise temperature",
+          "category": "moist-heat-cooking",
+          "priority": 3,
+          "difficulty": "medium",
+          "common_ingredients": ["meat", "fish", "vegetables", "eggs"]
+        },
+        {
+          "id": "pressure-cook",
+          "canonical_name": "pressure-cook",
+          "synonyms": ["cook under pressure", "pressure cooked", "pressure cooking", "pressure cook"],
+          "description": "Cook in sealed pot under high pressure",
+          "category": "moist-heat-cooking",
+          "priority": 2,
+          "difficulty": "medium",
+          "common_ingredients": ["beans", "meat", "stews", "rice"]
+        }
+      ]
+    },
+    {
+      "id": "finishing-presentation",
+      "name": "Finishing & Presentation",
+      "description": "Final touches and plating techniques",
+      "actions": [
+        {
+          "id": "glaze",
+          "canonical_name": "glaze",
+          "synonyms": ["coat with glaze", "glazed", "glazing"],
+          "description": "Coat with a glossy liquid or sauce",
+          "category": "finishing-presentation",
+          "priority": 2,
+          "difficulty": "easy",
+          "common_ingredients": ["meat", "vegetables", "pastries"]
+        },
+        {
+          "id": "garnish",
+          "canonical_name": "garnish",
+          "synonyms": ["decorate", "garnished", "garnishing"],
+          "description": "Add decorative or flavorful finishing touches",
+          "category": "finishing-presentation",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["herbs", "citrus", "vegetables"]
+        },
+        {
+          "id": "plate",
+          "canonical_name": "plate",
+          "synonyms": ["arrange on plate", "plated", "plating", "serve"],
+          "description": "Arrange food attractively on a serving plate",
+          "category": "finishing-presentation",
+          "priority": 1,
+          "difficulty": "medium",
+          "common_ingredients": ["any dish"]
+        },
+        {
+          "id": "drizzle",
+          "canonical_name": "drizzle",
+          "synonyms": ["pour lightly", "drizzled", "drizzling"],
+          "description": "Pour liquid in thin stream over food",
+          "category": "finishing-presentation",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["oil", "sauce", "syrup", "balsamic"]
+        },
+        {
+          "id": "dust",
+          "canonical_name": "dust",
+          "synonyms": ["sprinkle lightly", "dusted", "dusting"],
+          "description": "Sprinkle fine powder lightly over food",
+          "category": "finishing-presentation",
+          "priority": 2,
+          "difficulty": "easy",
+          "common_ingredients": ["powdered sugar", "cocoa", "flour", "spices"]
+        },
+        {
+          "id": "rest",
+          "canonical_name": "rest",
+          "synonyms": ["let sit", "rested", "resting", "let rest"],
+          "description": "Allow food to sit before cutting or serving",
+          "category": "finishing-presentation",
+          "priority": 1,
+          "difficulty": "easy",
+          "common_ingredients": ["meat", "bread", "dough"]
+        },
+        {
+          "id": "reduce",
+          "canonical_name": "reduce",
+          "synonyms": ["concentrate by cooking", "reduced", "reducing", "reduction"],
+          "description": "Cook liquid to evaporate water and concentrate flavors",
+          "category": "finishing-presentation",
+          "priority": 2,
+          "difficulty": "medium",
+          "common_ingredients": ["sauces", "wine", "stock", "cream"]
+        }
+      ]
+    }
+  ]
+}
