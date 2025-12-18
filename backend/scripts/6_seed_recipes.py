@@ -5,7 +5,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from app.database import get_db_context
 from app.models import Recipe, RecipeStep, CookingAction
-from app.services.nlp_service import NLPService
+from app.nlp import ActionExtractor, ActionMatcher
+from app.nlp.action_matcher import load_taxonomy_for_matcher
+from app.config import settings
 
 # Example comprehensive recipes
 EXAMPLE_RECIPES = [
@@ -106,8 +108,12 @@ def seed_recipes():
     print("Seeding Example Recipes")
     print("=" * 60)
 
+    # Initialize NLP components
+    taxonomy_actions = load_taxonomy_for_matcher(settings.TAXONOMY_PATH)
+    matcher = ActionMatcher(taxonomy_actions)
+    extractor = ActionExtractor(matcher, settings.SPACY_MODEL)
+
     recipes_added = 0
-    nlp_service = NLPService()
 
     with get_db_context() as db:
         for recipe_data in EXAMPLE_RECIPES:
@@ -141,7 +147,7 @@ def seed_recipes():
 
                 # Extract cooking actions using NLP
                 try:
-                    extracted = nlp_service.extract_cooking_actions(step_text)
+                    extracted = extractor.extract_actions(step_text)
                     action_names = [action["action"] for action in extracted]
 
                     if action_names:
