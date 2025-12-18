@@ -21,4 +21,7 @@ python scripts/5_seed_database.py
 echo "==> Seeding example recipes..."
 python scripts/6_seed_recipes.py
 
+echo "==> Migrating existing recipes (re-extract actions)..."
+python scripts/7_migrate_extract_actions.py
+
 echo "==> Build completed successfully!"
