@@ -148,16 +148,19 @@ def seed_recipes():
                 # Extract cooking actions using NLP
                 try:
                     extracted = extractor.extract_actions(step_text)
-                    action_names = [action["action"] for action in extracted]
 
-                    if action_names:
-                        # Find cooking actions in database
+                    if extracted:
+                        # Get action IDs from extraction results
+                        action_ids = [action["action_id"] for action in extracted]
+
+                        # Find cooking actions in database by ID
                         actions = db.query(CookingAction).filter(
-                            CookingAction.canonical_name.in_(action_names)
+                            CookingAction.id.in_(action_ids)
                         ).all()
 
                         # Link actions to step
                         step.extracted_actions = actions
+                        action_names = [a.canonical_name for a in actions]
                         print(f"  Step {idx}: {', '.join(action_names)}")
                     else:
                         print(f"  Step {idx}: (no techniques detected)")
